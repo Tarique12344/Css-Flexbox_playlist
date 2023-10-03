@@ -20,6 +20,13 @@
           <li><a href="" class="tw">Twitter</a></li>
         </ul>
       </nav>
+      <Div style="margin: 20px;">
+        <span>layout:</span>
+        <a href="#" class="stack">stack</a>
+        <a href="#" class="grid">grid</a>
+      </div>
+
+
     
       <section id="blocks">
         <article>
@@ -49,6 +56,14 @@
       </section>
       
     </div>
-    
+    <script>
+      
+      $("a.stack").on("click", funtion(){
+        $("article").addclass("stack");
+      });
+      $("a.stack").on("click", funtion(){
+        $("article").removeclass("stack");
+      });
+    </script>
   </body>
 </html>
